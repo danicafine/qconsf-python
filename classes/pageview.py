@@ -16,7 +16,7 @@ class Pageview(object):
         self.pageid   = pageid
 
     @staticmethod
-    def dict_to_mapping(obj, ctx=None):
+    def dict_to_pageview(obj, ctx=None):
         return Pageview(
                 obj['viewtime'],
                 obj['userid'],
