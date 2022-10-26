@@ -1,4 +1,3 @@
-import time
 import random
 
 from classes.user import User 
