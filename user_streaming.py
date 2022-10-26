@@ -18,7 +18,6 @@ if __name__ == '__main__':
     # set up Kafka Producer for UserMask
     producer = clients.producer(clients.usermask_serializer())
 
-    userids = range(5)
     # start consumption loop
     try:
         while True:
