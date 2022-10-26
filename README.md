@@ -10,6 +10,8 @@ cluster.
 
 ## Running
 
+Before running these commands, remember to run `pip install -r requirements.txt`. 
+
 Keep in mind that the producer and consumer clients have been set up to interact with the 'users' topic on Confluent Cloud.
 
 Excute producer code by running:
