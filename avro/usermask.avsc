@@ -1,0 +1,20 @@
+{
+  "connect.name": "ksql.usermasks",
+  "fields": [
+    {
+      "name": "registertime",
+      "type": "long"
+    },
+    {
+      "name": "userid",
+      "type": "string"
+    },
+    {
+      "name": "regionid",
+      "type": "string"
+    }
+  ],
+  "name": "usermasks",
+  "namespace": "ksql",
+  "type": "record"
+}

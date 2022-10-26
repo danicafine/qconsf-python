@@ -6,6 +6,7 @@ from confluent_kafka.schema_registry.avro import AvroSerializer, AvroDeserialize
 
 from classes.user import User
 from classes.pageview import Pageview
+from classes.usermask import UserMask
 
 import yaml
 
@@ -55,6 +56,14 @@ def pageview_serializer():
 		schema_registry_client = sr_client(),
 		schema_str = Pageview.get_schema(),
 		to_dict = Pageview.pageview_to_dict
+		)
+
+
+def usermask_serializer():
+	return AvroSerializer(
+		schema_registry_client = sr_client(),
+		schema_str = UserMask.get_schema(),
+		to_dict = UserMask.usermask_to_dict
 		)
 
 

@@ -15,7 +15,7 @@ if __name__ == '__main__':
     consumer = clients.consumer(clients.user_deserializer(), 'consumer-group-users', [config['topics']['users']])
 
     userids = range(5)
-    # start 30s consumption loop
+    # start consumption loop
     try:
         while True:
             msg = consumer.poll(1.0)

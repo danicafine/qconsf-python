@@ -20,6 +20,10 @@ Execute the consumer code by running:
 
 `python3 user_consumer.py`
 
+We have also included a small streaming example that transforms the events in the `user` topic by masking a field. Execute it by running:
+
+`python3 user_streaming.py` 
+
 ## Altering Clients
 
 This sample repository is meant to provide an easy sandbox environment to interact with consumers and producers. Review the [producer](https://docs.confluent.io/platform/current/installation/configuration/producer-configs.html) and [consumer](https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html) configuration parameters from the workshop and those included in `./config/config.yaml`.
