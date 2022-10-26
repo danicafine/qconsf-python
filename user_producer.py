@@ -5,8 +5,6 @@ import sys
 from classes.user import User 
 from helpers import clients,logging
 
-from confluent_kafka.error import SerializationError
-
 logger = logging.set_logging('user_producer')
 config = clients.config()
             

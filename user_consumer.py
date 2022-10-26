@@ -1,6 +1,3 @@
-import time
-import random
-
 from classes.user import User 
 from helpers import clients,logging
 
