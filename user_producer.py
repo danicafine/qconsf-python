@@ -14,7 +14,7 @@ if __name__ == '__main__':
     producer = clients.producer(clients.user_serializer())
 
     userids = range(5)
-    # start 30s production loop
+    # start 5s production loop
     try:
         while True:
             for userid in userids:
