@@ -1,0 +1,16 @@
+kafka:
+  bootstrap.servers: [BOOTSTRAP_SERVERS]
+  security.protocol: "SASL_SSL"
+  sasl.mechanisms: "PLAIN"
+  sasl.username: [CC_API_KEY]
+  sasl.password: [CC_API_SECRET]
+  session.timeout.ms: 45000
+
+# Confluent Cloud Schema Registry
+schema-registry:
+  schema.registry.url: [CC_SR_URL]
+  basic.auth.user.info: [CC_SR_API_KEY]:[CC_SR_API_SECRET]
+
+topics:
+  users: "users"
+  pageviews: "pageviews"
