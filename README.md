@@ -18,11 +18,13 @@ Excute producer code by running:
 
 `python3 user_producer.py`
 
-Execute the consumer code by running: 
+In a separate terminal window, execute the consumer code by running: 
 
 `python3 user_consumer.py`
 
-We have also included a small streaming example that transforms the events in the `user` topic by masking a field. Execute it by running:
+We have also included a small streaming example that transforms the events in the `user` topic by masking a field. Not that you should have a producer running before you start the streaming example. 
+
+Execute the stream processing script by running:
 
 `python3 user_streaming.py` 
 
